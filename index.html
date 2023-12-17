@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Input Validation</h1>
+
+    <form id="validationForm" onsubmit="return validateForm()">
+        <label for="cin">CIN:</label>
+        <input type="text" id="cin" name="cin" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>
